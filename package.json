@@ -1,0 +1,39 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "Coding Bootcamp Weekly Challenge 13. A blog built following the MVC paradigm in its architectural structure. It uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandromichelena/tech-blog.git"
+  },
+  "keywords": [
+    "blog",
+    "cms",
+    "express",
+    "handlebars",
+    "mysql",
+    "sequelize",
+    "MVC"
+  ],
+  "author": "leandro michelena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandromichelena/tech-blog/issues"
+  },
+  "homepage": "https://github.com/leandromichelena/tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
+  }
+}
