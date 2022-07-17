@@ -53,7 +53,13 @@ router.get('/:id', (req, res) => {
         res.status(404).json({ message: 'No post found with this id' });
         return;
       }
-      res.json(data);
+
+      const post = data.get({ plain: true });
+
+      res.render("post", {
+        post,
+        loggedIn: req.session.loggedIn,
+      });
     })
     .catch(err => {
       console.log(err);
