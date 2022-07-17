@@ -1,18 +1,27 @@
 {{> posts post}}
 
 {{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-  <div>
-    <button type="submit">Add a comment...</button>
-  </div>
-</form>
+<br>
+<div class="">
+  <h3>Add a comment:</h3>
+  <form class="comment-form">
+    <div>
+
+      <textarea class="form-control" name="comment-body"></textarea>
+    </div>
+    <div>
+      <button class="btn btn-primary" type="submit">Add a comment...</button>
+    </div>
+  </form>
+</div>
+<br>
 {{/if}}
 
-{{> comments post.comments}}
+<div>
+  <h3>Comments:</h3>
+  {{> comments post.comments}}
 
-{{#if loggedIn}}
-<script src="/js/comment.js"></script>
-{{/if}}
+  {{#if loggedIn}}
+  <script src="/js/comment.js"></script>
+  {{/if}}
+</div>
